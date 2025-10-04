@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFun - Where Learning is an Adventure!</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>LearnFun</h1>
+                <span class="logo-sub">Adventure Academy</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link">🏠 Home</a>
+                <a href="#" class="nav-link">📚 Subjects</a>
+                <a href="About.html" class="nav-link">😇 About Us</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <a href="LogIn.html" class="nav-link">👤 Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="main-content">
+                <h2>Let's Learn & Play!</h2>
+                <p>Join thousands of kids on an exciting educational adventure with fun games, videos, and activities!</p>
+                <div class="main-buttons">
+                    <button class="btn btn-primary" onclick="startAdventure()">Start Adventure!</button>
+                    <button class="btn btn-secondary" id="info_btn">Parents Info</button>
+                    <div style="display:none" id="parent_info">
+                        <ul><li>Name</li>
+                            <li>Gender</li>
+                            <li>Phone Number</li>
+                            <li>Email</li>
+                            <li>Qualification</li></ul>
+                     </div>
+
+
+                </div>
+            </div>
+            <div class="main-image">
+                <div class="smiley" id="smiley">
+                    <div class="smiley"><span style="font-size:200px">☺️</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" >
+        <div class="container" >
+            <h3>How Learning Comes to Life</h3>
+            <div class="category">
+                <div class="category">
+                    <div class="category-icon">📚</div>
+                    <h4>Choose</h4>
+                    <p>Pick your favorite subject or game</p>
+                </div>
+                <div class="category">
+                    <div class="category-icon">🃏</div>
+                    <h4>Play</h4>
+                    <p>Have fun with interactive activities</p>
+                </div>
+                <div class="category">
+                    <div class="category-icon">💸</div>
+                    <h4>Grow</h4>
+                    <p>Learn new things and earn cash prizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="subjects">
+        <div class="container">
+            <h3>Explore Learning Worlds</h3>
+            <div class="subject-grid">
+                <div class="subject-card" >
+                    <div class="subject-icon">🧮</div>
+                    <h4>Math & Numbers</h4>
+                    <p>Count, add, and solve puzzles!</p>
+                </div>
+                <div class="subject-card" ">
+                    <div class="subject-icon">📚</div>
+                    <h4>Reading & Stories</h4>
+                    <p>Amazing stories and word games!</p>
+                </div>
+                <div class="subject-card" ">
+                    <div class="subject-icon">🔬</div>
+                    <h4>Science & Nature</h4>
+                    <p>Discover amazing facts!</p>
+                </div>
+                <div class="subject-card" ">
+                    <div class="subject-icon">🎨</div>
+                    <h4>Art & Creativity</h4>
+                    <p>Draw, paint, and create!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini-game">
+        <div class="container">
+            <h3>Quick Math Challenge!</h3>
+            <div class="game-container">
+                <div class="game-question" id="mathQuestion">5 + 3 = ?</div>
+                <div class="game-options">
+                    <button class="game-btn" onclick="checkAnswer(7)">7</button>
+                    <button class="game-btn" onclick="checkAnswer(8)">8</button>
+                    <button class="game-btn" onclick="checkAnswer(9)">9</button>
+                </div>
+                <div class="game-feedback" id="gameFeedback">Can you solve it?</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 LearnFun Adventure Academy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Parents Guide</a>
+                <a href="#">Teachers Guide</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
